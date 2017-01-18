@@ -14,7 +14,7 @@ public class Product {
 		p.category = randomName(category);
 		p.name = randomName(name);
 		p.description = "random items";
-		p.unitPrice = new BigDecimal(new Random().nextInt(1000000));
+		p.unitPrice = new BigDecimal(new Random().nextInt(1000));
 		p.manufacturer = randomName(manufacturer);
 		p.condition = "Good";
 		p.unitsInStock = new Random().nextInt(200);

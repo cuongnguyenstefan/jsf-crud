@@ -15,7 +15,7 @@ public class InMemoryProductRepository implements ProductRepository {
 	
 	public InMemoryProductRepository() {
 		listOfProduct = new ArrayList<Product>();
-		for (int i = 0; i < 20; i++) {
+		for (int i = 0; i < 21; i++) {
 			int id = i + 1;
 			Product p = Product.createRandomProduct(id + "");
 			listOfProduct.add(p);
