@@ -25,6 +25,7 @@
 		<div class="jumbotron">
 			<div class="container">
 				<h1>Product List</h1>
+				<a href="products/add" class="btn btn-primary btn-lg" role="button">Add Product</a>
 			</div>
 		</div>
 		<div class="row">
@@ -33,6 +34,8 @@
 					<h3>
 						<a href="product/${product.productId}">${product.productId} -
 							${product.name}</a>
+						<a href="products/update/${product.productId}"><span class="glyphicon glyphicon-wrench"></span></a>
+						<a href="products/delete/${product.productId}"><span class="glyphicon glyphicon-remove"></span></a>
 					</h3>
 					<p>${product.description}</p>
 					<p>${product.unitPrice}USD</p>

@@ -16,7 +16,7 @@ public class Product {
 		p.description = "random items";
 		p.unitPrice = new BigDecimal(new Random().nextInt(1000));
 		p.manufacturer = randomName(manufacturer);
-		p.condition = "Good";
+		p.condition = "New";
 		p.unitsInStock = new Random().nextInt(200);
 		p.unitsInOrder = 0;
 		return p;
@@ -141,8 +141,9 @@ public class Product {
 		if (obj == null) return false;
 		if (obj instanceof Product) {
 			Product p = (Product) obj;
-			return p.productId == this.productId;
+			return p.productId.equals(this.productId);
 		}
 		return false;
 	}
+	
 }
